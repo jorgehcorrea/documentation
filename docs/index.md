@@ -17,3 +17,7 @@ The existing project, developed by Fablab Zoi already works inside an <95% humid
 ## Development
 
 ### From bluetooth to Wi - Fi to Tweeter Notifications
+
+Safe-keeping the following address in order to always have access.   
+https://jorgehcorrea.github.io/documentation/nRf24L01/
+
