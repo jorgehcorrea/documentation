@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="MkDocs Team">
+        <link rel="canonical" href="https://github.com/jorgehcorrea/documentation/tree/master/docs/index.md/nRf24L01/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>nRf24L01 - SMI</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">SMI</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Documentation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../433/">433 mhz</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">nRf24L01</a>
+</li>
+                                    
+<li >
+    <a href="../esp8266/">esp8266</a>
+</li>
+                                    
+<li >
+    <a href="../fabzoi_system/">fabzoi_system</a>
+</li>
+                                    
+<li >
+    <a href="../433_int/">433_integration</a>
+</li>
+                                    
+<li >
+    <a href="../wi-fi_int/">wi-fi_integration</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../433/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../esp8266/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jorgehcorrea/documentation"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#smi">SMI</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#the-concept">The Concept</a></li>
+            <li><a href="#details-nrf24l01">Details: nRF24l01</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="smi">SMI<a class="headerlink" href="#smi" title="Permanent link"></a></h1>
+<p>Sistema de Monitoreo Inalambrico</p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+<p>This section will record the development in using the nRF24L01 system. Wi-Fi System. </p>
+<hr />
+<h2 id="the-concept">The Concept<a class="headerlink" href="#the-concept" title="Permanent link"></a></h2>
+<p>The final concept through this system is to connect the nRF24 module to the internet, and alert potential risk factors that can harm the development of the pilones. </p>
+<ul>
+<li>The tweet platform <a href="https://arduino-tweet.appspot.com/">arduino-tweet</a>  </li>
+<li>The connection between nRF24 to Wi-Fi, links <a href="https://forum.arduino.cc/index.php?topic=450752.0">1</a>,<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiky6vEn8XoAhWkTt8KHeGeD1MQFjABegQIDRAB&amp;url=https%3A%2F%2Fdevzone.nordicsemi.com%2Ff%2Fnordic-q-a%2F6654%2Fis-nrf24l01-connectable-to-a-wifi-router-if-using-a-proper-library&amp;usg=AOvVaw2wPk7JUsfKHDFMhrkbK3m1">2</a> &amp; <a href="https://arduino.stackexchange.com/questions/5351/nrf24l01-scanning-and-connecting-to-wifi-hotspots-or-creating-one">3</a>  <ul>
+<li>Apparently it is not possible to connect the nRF24l01 to a normal Wi-Fi Network. </li>
+</ul>
+</li>
+<li>The connection between nRF24 and Arduino Uno <a href="https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/">nrf24l01-arduino</a> &amp; <a href="https://www.arduino.cc/en/Reference/SPI">SPI</a>  </li>
+</ul>
+<p>Different to the 433mhz RF, the Wi-fi modules is able to send and verify that the data package has been received, making the communication much more reliable. </p>
+<hr />
+<h2 id="details-nrf24l01">Details: nRF24l01<a class="headerlink" href="#details-nrf24l01" title="Permanent link"></a></h2>
+<p>The nrf24l01, as far as I can tell cannot be connected to the Wi-Fi network easily. Yet there is a large amount of information that can be saved for further reference. <br />
+The interesting part of the nrf24l01, a deviation module: nRF24L01 - PA LNA with External Antenna can get distances of 1000m (without obstructions) with the added advantage that the system will ratify the delivered data package.   </p>
+<ul>
+<li>How nrf24l01 + wireless module work with Arduino <a href="https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/">nrf24l01@Last_min_engenners</a>  </li>
+<li>SPI Library - Introduction toi Serial Peripheroal Interface <a href="https://www.arduino.cc/en/Reference/SPI">SPI_Library@Arduino.io</a>   </li>
+<li><a href="https://playground.arduino.cc/InterfacingWithHardware/Nrf24L01/">Arduin's-nRF24L01_Resources</a>- Including the Radiohead Library (Previously seen @ 433mhz)  </li>
+<li><a href="https://www.airspayce.com/mikem/arduino/RadioHead/">nrf24l01-radiohead_library</a>  </li>
+<li><a href="https://github.com/nRF24/RF24/tree/master/examples">github-RF24_OpensourceLibrary</a>  </li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=xb7psLhKTMA">How To Build an Arduino Wireless Network with Multiple NRF24L01 Modules</a>  </p>
+</li>
+<li>
+<p><a href="https://cdn.sparkfun.com/datasheets/Wireless/WiFi/ESP8266ModuleV1.pdf">ESP8266Module-commands</a>  </p>
+</li>
+<li><a href="https://create.arduino.cc/projecthub/Rjuarez7/arduino-and-ethernet-shield-sending-tweets-to-twitter-1d9c44">arduino&amp;ethernet_shield</a> to tweet stuff  </li>
+<li><a href="https://create.arduino.cc/projecthub/projects/tags/twitter">arduin_tweetProjects</a></li>
+</ul>
+<hr />
+<h3 id="final-thoughts">Final thoughts<a class="headerlink" href="#final-thoughts" title="Permanent link"></a></h3>
+<p>After the investigation, will move on to use the ESP8266 Module as it shows to be relevant in this project. I have left a bunch of documentation regarding the works of the Nrf24L01, as it could be a possible replacement for the 433, in the case that the multi-user with it goes south. The transition system offered by 2.4ghz, and the fact that it is secure. It also has to be mentioned that the arduino uno can only handle 2 nRF24 slaves.   </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2020 <a href="www.jhc.design">Jorge Correa</a> MkDocs Support:<a href="https://yakworks.github.io/mkdocs-material-components/cheat-sheet/">Cheat Sheet</a>, <a href="https://www.mkdocs.org/user-guide/writing-your-docs/">Writing your docs</a></p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
