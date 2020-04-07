@@ -1,7 +1,7 @@
 site_name: SMI
 site_url: https://github.com/jorgehcorrea/documentation/tree/master/docs/index.md
 site_description: Sistema de Monitoreo Inalambrico
-site_author: MkDocs Team
+site_author: 
 
 repo_url: https://github.com/jorgehcorrea/documentation
 edit_uri: ""
