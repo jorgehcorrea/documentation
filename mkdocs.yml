@@ -19,6 +19,7 @@ nav:
         - 433 mhz: 433.md
         - nRf24L01: nRf24L01.md
         - esp8266: esp8266.md 
+        - esp32.md
         - fabzoi_system: fabzoi_system.md
         - 433_integration: 433_int.md
         - wi-fi_integration: wi-fi_int.md
