@@ -5,23 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
+        
         <link rel="canonical" href="https://github.com/jorgehcorrea/documentation/tree/master/docs/index.md/esp8266/">
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>esp8266 - SMI</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../css/extra.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
@@ -29,78 +24,74 @@
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="..">SMI</a>
-                </div>
+                <a class="navbar-brand" href="..">SMI</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Home</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Documentation <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../433/">433 mhz</a>
+<li>
+    <a href="../433/" class="dropdown-item">433 mhz</a>
 </li>
                                     
-<li >
-    <a href="../nRf24L01/">nRf24L01</a>
+<li>
+    <a href="../nRf24L01/" class="dropdown-item">nRf24L01</a>
 </li>
                                     
-<li class="active">
-    <a href="./">esp8266</a>
+<li>
+    <a href="./" class="dropdown-item active">esp8266</a>
 </li>
                                     
-<li >
-    <a href="../fabzoi_system/">fabzoi_system</a>
+<li>
+    <a href="../esp32/" class="dropdown-item">SMI</a>
 </li>
                                     
-<li >
-    <a href="../433_int/">433_integration</a>
+<li>
+    <a href="../fabzoi_system/" class="dropdown-item">fabzoi_system</a>
 </li>
                                     
-<li >
-    <a href="../wi-fi_int/">wi-fi_integration</a>
+<li>
+    <a href="../433_int/" class="dropdown-item">433_integration</a>
+</li>
+                                    
+<li>
+    <a href="../wi-fi_int/" class="dropdown-item">wi-fi_integration</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../nRf24L01/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../nRf24L01/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../fabzoi_system/">
+                            <li class="nav-item">
+                                <a rel="next" href="../esp32/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/jorgehcorrea/documentation"><i class="fa fa-github"></i> GitHub</a>
+                            <li class="nav-item">
+                                <a href="https://github.com/jorgehcorrea/documentation" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -108,13 +99,144 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-</div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#smi" class="nav-link">SMI</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#development" class="nav-link">Development</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1-post-tweet-with-esp8266" class="nav-link">1.  Post Tweet with ESP8266</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="smi">SMI<a class="headerlink" href="#smi" title="Permanent link"></a></h1>
+<p>Sistema de Monitoreo Inalambrico</p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+<p>This section will record the experiments regardin the esp8266 module. This module, has the ability to connect to the wi-fi. As such, the esp8266 is a great alternative to use in this system.   </p>
+<hr />
+<h3 id="the-existing-solution">The existing solution<a class="headerlink" href="#the-existing-solution" title="Permanent link"></a></h3>
+<p>Currently there is no existing solution to the system. As the Fab system contains the end data transition in a screen in the hardware, and the output to the SD card. The objective of this next step is to tweet when the system finds an unexpected or potentially dangerous data reading.   </p>
+<hr />
+<h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link"></a></h2>
+<p>The development has been to follow the <a href="https://www.geekstips.com/esp8266-arduino-tutorial-iot-code-example/">ESP8266Arduinotutorial–WiFimodule</a>, to better understand the system.<br />
+<img alt="esp8266-ports" src="https://www.geekstips.com/wp-content/uploads/2016/12/ESP8266-Pinout-GeeksTips.jpg" />  </p>
+<p>This is the Pins the module uses. Important: VCC= 3.3v, 5v might burn the chip.  </p>
+<pre><code>    * AT – response OK  
+    * AT+CWLAP – list nearby available WiFi networks  
+    * AT+GMR – check the firmware version  
+    * AT+CWJAP=”&lt;access_point_name&gt;”,”&lt;password&gt;” – join WiFi network using credentials  
+    * AT+CIFSR – get current allocated IP address
+</code></pre>
+<p>Datasheet: <a href="https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf">esp8266ex_chipDatasheet</a>
+AT Instructions: <a href="https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf">esp8266_atinstructions</a><br />
+Module datasheet: <a href="[esp8266_01_moduleDatasheet]">esp8266_01_moduleDatasheet</a>  </p>
+<p>After some time ill spent on the tutorial I have decide to go a different route, as I cannot replicate the communication between Arduino and  THE ESP8266.   </p>
+<p>I used the tutorial <a href="https://www.youtube.com/watch?v=7gXcTBHLCRc">wifi_modulo_esp8266_conectarse</a>, en español. It was a proponent of the idea that the Arduino Uno could be used, under the condition to remove the atmega 328p chip removed and adding a external power battery in order for the Arduino to have enough power through the 3.3v connection. It also requires the "ch pd" PIN to be in high. * follow on what that means form the datasheets * I am also not clear what that means when attempting to connect it to an Arduino with microcontroller, or maybe it is just the setup?</p>
+<p>In this case, open Arduino IDE, connect the correct port and open under TOOS&gt;serial monitor. Set the to: both NL &amp; CR, and 115200(in this case).
+Write: </p>
+<pre><code>     AT   
+        * establish communication, response: ok     
+     AT+CIOBAUD=9600  
+        * it is preferable to work on 9600 baud, After command switch to 9600 baud  
+     AT+GMR  
+        * asks the current version   
+     AT+CWMODE?  
+        * What mode esp is working on.   
+        * Mode 1= station, Mode 2= access point, Mode 3= station &amp; access point  
+     AT+CWMODE=3  
+        * Change to station and access point  
+     AT+CWLAP  
+        * Look for current networks
+</code></pre>
+<p><img alt="local_networks" src="../img/local_networks.PNG" />  </p>
+<pre><code>     AT+CWJAP="JHC","1122334455"  
+        * With this we select the network to connect to and its password  
+     AT+CIPMUX=1
+        * Testing if the connection is correct. 
+     AT+CIPSERVER=1,80
+        * Setting up the channel and the port to talk to the device. 
+     AT+CIFSR
+        * Aquire the communication ip.
+     Response:   
+        09:35:10.635 -&gt; +CIFSR:APIP,"192.168.4.1"  
+        09:35:10.686 -&gt; +CIFSR:APMAC,"62:01:94:33:60:8f"  
+        09:35:10.721 -&gt; +CIFSR:STAIP,"192.168.100.100"  
+        09:35:10.756 -&gt; +CIFSR:STAMAC,"60:01:94:33:60:8f"  
+     SELECT CIFSR:STAIP + CIPSERVER RESULT + / MESSAGE 192.168.100.100:8/HOLAMUNDO 
+     Transmision through web browser:
+</code></pre>
+<p><img alt="browser_transmit" src="../img/transmision_wifi.PNG" />
+         Transmision from a remote location, my iphone.  </p>
+<p><img alt="iphone_sent" src="../img/transmision_iphone_sent.PNG" /> 
+         The reciver end: <br />
+<img alt="iphone_recive" src="../img/transmision_iphone.PNG" />  </p>
+<h3 id="cheek-point-esp-arduino">Cheek point:   Esp &amp; Arduino<a class="headerlink" href="#cheek-point-esp-arduino" title="Permanent link"></a></h3>
+<p>The tutorial ends here. With this we not only proved that the esp is working but that it is relatively simple to interact with wi-fi, including sing in info and messages.<br />
+It should be noted the esp is capable enough to be used independently, bypassing the Arduino completely and is what we did in the previous tutorial. It would be a shame to use Arduino board without its main microcontroller, so the next goal should be to communicate the esp directly, or to integrate both boards.  </p>
+<hr />
+<h3 id="posting-a-tweet">Posting a tweet<a class="headerlink" href="#posting-a-tweet" title="Permanent link"></a></h3>
+<p>in the next project, I'm going to tweet with the ESP8266. The simplest way possible, though the Arduino shield with out the Atmel microcontroller. There are several tutorials, and with it different options: <br />
+ * <a href="https://randomnerdtutorials.com/posting-a-tweet-with-the-esp8266/">posting_tweet1</a> = Using IFTTT and NodeMCU<br />
+ * <a href="https://www.youtube.com/watch?v=PMwfJEh_6gI">posting_tweet2</a> = Using www.thinkspeak.com<br />
+ * <a href="https://www.youtube.com/watch?v=qU8_z8iAoUQ">posting_tweet3</a> = Using Blynk Library   </p>
+<h2 id="1-post-tweet-with-esp8266">1.  Post Tweet with ESP8266<a class="headerlink" href="#1-post-tweet-with-esp8266" title="Permanent link"></a></h2>
+<p>In order to tweet in this case we will use IFTTT "if this then that". An open service platform that lest you control many apps and products through the internet.   </p>
+<p>Using the IFTTT platform,  you would send a request to the  IFTTT platform, and it triggers a recipe that sends you an email alert as an example.   </p>
+<p>Start by accessing the ifttt page. The tutorial has already made an applet to tweet. It is found as <a href="https://ifttt.com/applets/316941p-post-a-tweet-with-the-esp8266">postAtweetWithTheESP8266</a>. <br />
+        1. Complete the applet, "left the post_tweet" in the even name
+        2. Edited the text sent from the esp8266, by adding my tweeter @IdJogrecorrea, and the documentation taking place  <br />
+        3. Save the changes. 
+        4. Select settings at ifttt, and copy my secret key as follows:<br />
+             * URL: https://maker.ifttt.com/use/frrj4uKCEUvYFZRaFRbwXCt4lTs6XqfwcAXQ6pvtVTR<br />
+            https://maker.ifttt.com/trigger/post_tweet/with/key/frrj4uKCEUvYFZRaFRbwXCt4lTs6XqfwcAXQ6pvtVTR
+        https://maker.ifttt.com/use/frrj4uKCEUvYFZRaFRbwXCt4lTs6XqfwcAXQ6pvtVTR<br />
+            frrj4uKCEUvYFZRaFRbwXCt4lTs6XqfwcAXQ6pvtVTR
+        https://maker.ifttt.com/trigger/post_tweet/with/key/frrj4uKCEUvYFZRaFRbwXCt4lTs6XqfwcAXQ6pvtVTR<br />
+        5. Enter the earlier http adress to action the applet through web. I did manage to get the browser to send the tweeter and got as expected: <br />
+                Congratulations! You've fired the post_tweet event<br />
+            But I did not find a tweet. It is unfortunate, and have no idea where it went wrong. I will hence proceed to another method of tweeting.   </p>
+<hr />
+<h3 id="another-alternative-to-make-the-esp8266-work-with-tweeter">Another Alternative to make the esp8266 work with tweeter<a class="headerlink" href="#another-alternative-to-make-the-esp8266-work-with-tweeter" title="Permanent link"></a></h3>
+<p><a href="https://www.google.com/search?client=firefox-b-d&amp;q=thingspeak+esp8266+tutorial#kpvalbx=_nt6TXofIAsOZ_Qa6tItY70">using_thingspeak</a>  </p>
+<h3 id="conclusions">Conclusions<a class="headerlink" href="#conclusions" title="Permanent link"></a></h3>
+<p>In this case I have opted to finally switch to esp 32, as the esp 8266 shield was out of my reach and hacking it with local components could not obtain enough stability (most lightly) in order to establish a communication that did not require an unassembled Arduino.   </p>
+<h3 id="other-interesting-references-for-safe-keeping">Other interesting references for safe keeping<a class="headerlink" href="#other-interesting-references-for-safe-keeping" title="Permanent link"></a></h3>
+<ul>
+<li>Three tutorials for ESP8266 and ESP32 <a href="https://arduinojson.org/news/2018/09/24/three-tutorials/">arduinojson.org</a>  </li>
+<li><a href="https://create.arduino.cc/projecthub/Niv_the_anonymous/esp8266-beginner-tutorial-project-6414c8">ESP8266 - Beginner Tutorial + Project</a> - An ultimate tutorial for beginners on how to connect and use an ESP8266 via Arduino and program it to blink an LED using the Blynk app.  </li>
+<li><a href="https://lastminuteengineers.com/electronics/esp8266-projects/">esp88266_lastminengineers</a>- Mostly getting time date, simple weather station, display multiple values on web server, etc. </li>
+<li><a href="https://arduino-esp8266.readthedocs.io/en/latest/installing.html">ESP8266_arduino_core</a>- Exceptional library on everything between Arduino and esp8266, but its sort of advanced. </li>
+<li><a href="https://www.youtube.com/watch?v=oW8w2d_SMA4">Estacion_meteorologica</a> video de YouTube</li>
+</ul>
+<p>-- Others </p>
+<p>Safe-keeping the following address in order to always have access. <br />
+https://jorgehcorrea.github.io/documentation  </p>
+<p>-</p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -129,21 +251,21 @@
         <script src="../js/base.js" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -152,12 +274,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
